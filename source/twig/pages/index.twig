@@ -1,0 +1,21 @@
+{% extends "../template/layout.twig" %}
+{% block title %}VDNH{% endblock %}
+{% set hideInformer = true %}
+{% block page %}
+	<div class="wrapper">
+		<div class="preview">
+			<h1 class="preview__title">
+				Рекомендации
+			</h1>
+			<div class="preview__desc">
+				Мы собрали интересные события этой недели
+			</div>
+			{% include "../partial/preview/list.twig" %}
+			<div class="preview__button">
+				<a href="map.html" class="b-btn b-btn--black">
+					Закрыть
+				</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}

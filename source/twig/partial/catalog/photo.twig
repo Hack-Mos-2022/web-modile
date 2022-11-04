@@ -1,0 +1,24 @@
+<section class="category-photo section">
+	{% include "../site/section-header.twig" with {
+		title : "В ближайшие 6 часов",
+		link  : true
+	} only %}
+
+	<a href="mobile.html" class="category-photo__item">
+		<div class="category-photo__image">
+			<picture>
+				<source srcset="images/photo/item.webp 1x, images/photo/item@2x.webp 1.3x" type="image/webp">
+				<source srcset="images/photo/item.jpg 1x, images/photo/item@2x.jpg 1.3x" type="image/png">
+				<img src="images/photo/item.jpg" width="327" height="298" loading="lazy" alt="">
+			</picture>
+		</div>
+		<div class="category-photo__main">
+			<div class="category-photo__catalog">
+				Фотовыставка
+			</div>
+			<div class="category-photo__title">
+				«Сердце Югры»
+			</div>
+		</div>
+	</a>
+</section>

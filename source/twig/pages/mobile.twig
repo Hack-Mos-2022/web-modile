@@ -1,0 +1,29 @@
+{% extends "../template/layout.twig" %}
+{% block title %}VDNH{% endblock %}
+{% set hideInformer = true %}
+{% block page %}
+	<div class="wrapper">
+		<div class="mobile-app wrapper">
+			<div class="mobile-app__main">
+				<div class="mobile-app__icon">
+					<img src="images/logo-min.svg" height="55" width="55" loading="eager" alt="ВДНХ">
+				</div>
+				<h1 class="mobile-app__title">
+					Купить билеты вы можете в нашем приложении со скидкой
+				</h1>
+				<div class="mobile-app__desc">
+					Получайте бльше бонусов в приложении
+				</div>
+			</div>
+
+			<div class="mobile-app__button">
+				<a href="#" target="_blank" class="b-btn b-btn--red">
+					Скачать приложение
+				</a>
+				<a href="map.html" class="b-btn b-btn--blank">
+					Не сейчас
+				</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}

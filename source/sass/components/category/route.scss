@@ -1,0 +1,45 @@
+.category-route {
+	font-size             : 12px;
+	font-weight           : 700;
+	font-style            : normal;
+	line-height           : 120%;
+	display               : grid;
+	box-sizing            : border-box;
+	min-height            : 183px;
+	padding               : 20px;
+	transition            : background-color .3s ease;
+	text-decoration       : none;
+	color                 : $color-white-100;
+	border-radius         : 6px;
+	background            : $color-main-red;
+	grid-template-columns : 1fr 108px;
+	grid-template-rows    : 1fr auto;
+	gap                   : 10px 10px;
+	grid-template-areas   :
+    "meta image"
+    "title image";
+
+	&:hover {
+		color      : $color-white-100;
+		background : $color-main-red-100;
+	}
+}
+
+.category-route__meta {
+	grid-area : meta;
+}
+
+.category-route__title {
+	font-size      : 18px;
+	font-weight    : 600;
+	font-style     : normal;
+	line-height    : 110%;
+	max-width      : 155px;
+	letter-spacing : 0.002em;
+	grid-area      : title;
+}
+
+.category-route__image {
+	align-self : center;
+	grid-area  : image;
+}

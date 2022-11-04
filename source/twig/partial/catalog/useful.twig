@@ -1,0 +1,22 @@
+<section class="category-useful section" data-slider="slide">
+	{% include "../site/section-header.twig" with {
+		title : "Полезное",
+		link  : false
+	} only %}
+
+	<div class="swiper">
+		<div class="swiper-wrapper">
+			{% for item in useful %}
+				<div class="swiper-slide">
+					<a href="mobile.html" class="category-useful__item">
+						<picture>
+							<source srcset="images/useful/{{ item }}.webp 1x, images/useful/{{ item }}@2x.webp 1.3x" type="image/webp">
+							<source srcset="images/useful/{{ item }}.png 1x, images/useful/{{ item }}@2x.png 1.3x" type="image/png">
+							<img src="images/useful/{{ item }}.png" width="327" height="428" loading="lazy" alt="">
+						</picture>
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,57 @@
+{% extends "../template/layout.twig" %}
+{% block title %}Терракотовая армия. Бессмертные воины Китая{% endblock %}
+{% block page %}
+	<article class="article page-main">
+		<div class="wrapper">
+			{% include "../partial/item/gallery.twig" with {
+				gallery: gallery,
+				title : "Терракотовая армия. Бессмертные воины Китая"
+			} %}
+			<div class="article__category">
+				<span>Экскурсии</span>
+			</div>
+			<h1 class="article__title">
+				Терракотовая армия. Бессмертные воины Китая
+			</h1>
+			<div class="article__date">
+				12 декабря 2022, четверг 12:00
+			</div>
+			<div class="article__pin">
+				<a href="#">
+					<svg width="11" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M5.5.25a4.99998 4.99998 0 0 0-3.53553 1.46447A4.99996 4.99996 0 0 0 .5 5.25c0 3.375 4.40625 7.1875 4.59375 7.35a.62513.62513 0 0 0 .8125 0C6.125 12.4375 10.5 8.625 10.5 5.25a4.99996 4.99996 0 0 0-1.46447-3.53553A4.99998 4.99998 0 0 0 5.5.25Zm0 11.0312c-1.33125-1.25-3.75-3.9437-3.75-6.0312a3.75 3.75 0 0 1 7.5 0c0 2.0875-2.41875 4.7875-3.75 6.0312Zm0-8.5312a2.5 2.5 0 1 0 0 4.99998A2.5 2.5 0 0 0 5.5 2.75Zm0 3.75a1.25 1.25 0 1 1 0-2.49998A1.25 1.25 0 0 1 5.5 6.5Z" fill="#fff" />
+					</svg>
+					<span>Павильон №58</span>
+				</a>
+			</div>
+			{% include "../partial/item/info.twig" %}
+			{% include "../partial/item/user.twig" %}
+			{% include "../partial/item/desc.twig" %}
+			{% include "../partial/item/tags.twig" with {
+				tags : tags
+			} %}
+			{% include "../partial/item/place.twig" %}
+		</div>
+	</article>
+{% endblock %}
+{% block scripts %}
+	<script>
+		'use strict';
+
+		function share() {
+			return {
+				showShare() {
+					if (navigator.share) {
+						navigator.share({
+							title:document.title,
+							url  :window.location.href
+						}).catch(err => {
+							console.log('Error while using Web share API:');
+							console.log(err);
+						});
+					}
+				}
+			}
+		}
+	</script>
+{% endblock %}

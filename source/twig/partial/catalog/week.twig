@@ -1,0 +1,37 @@
+<section class="category-week section" data-slider="slide">
+	{% include "../site/section-header.twig" with {
+		title : "На этой неделе",
+		link  : true
+	} only %}
+
+	<div class="swiper">
+		<div class="swiper-wrapper">
+			{% for item in week %}
+				<div class="swiper-slide">
+					<a href="mobile.html" class="category-week__item">
+						<div class="category-week__image">
+							<div class="category-week__meta">
+								{{ item.meta }}
+							</div>
+							<picture>
+								<source srcset="images/week/{{ item.image }}.webp 1x, images/week/{{ item.image }}@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/week/{{ item.image }}.jpg 1x, images/week/{{ item.image }}@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/week/{{ item.image }}.jpg" width="224" height="253" loading="lazy" alt="">
+							</picture>
+						</div>
+						<div class="category-week__main">
+							<div class="category-week__title">
+								{{ item.title }}
+							</div>
+							<div class="category-week__more">
+								<svg width="19" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.00977 8.91406h8.88563m-3.6098 3.60974 3.6097-3.60974-3.6097-3.60978" stroke="currentColor" stroke-width="1.47204" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

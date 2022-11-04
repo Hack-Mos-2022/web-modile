@@ -1,0 +1,70 @@
+.article-place {
+
+}
+
+.article-place__grid {
+	display         : flex;
+	align-items     : center;
+	flex-flow       : row nowrap;
+	justify-content : space-between;
+}
+
+.article-place__main {
+	font-size      : 13px;
+	font-weight    : 500;
+	line-height    : 130%;
+	flex           : 1 1 auto;
+	margin-right   : 8px;
+	letter-spacing : 0.3px;
+	color          : $color-white-100;
+}
+
+.article-place__label {
+	font-size      : 13px;
+	font-weight    : 600;
+	font-style     : normal;
+	line-height    : 135%;
+	margin-bottom  : 9px;
+	letter-spacing : 0.3px;
+	color          : $color-white-40;
+}
+
+.article-place__distance {
+	font-size      : 13px;
+	font-weight    : 500;
+	flex           : 0 0 auto;
+	letter-spacing : 0.3px;
+	opacity        : 0.4;
+	color          : $color-white-100;
+}
+
+.article-place__button {
+
+}
+
+.article-maps {
+	margin-top    : 24px;
+	padding       : 15px;
+	border-radius : 12px;
+	background    : $color-black-60;
+	box-shadow    : 0 4px 14px rgba(0, 0, 0, 0.15);
+	@media screen and (min-width : 375px) {
+		margin-right : -15px;
+		margin-left  : -15px;
+	}
+}
+
+.article-maps__inner {
+	width         : 100%;
+	height        : 205px;
+	border-radius : 12px;
+	background    : $color-black-40;
+}
+
+.article-place__button {
+	margin-top : 24px;
+
+	.b-btn + .b-btn {
+		margin : 16px 0 0;
+	}
+}

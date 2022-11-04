@@ -1,0 +1,16 @@
+<div class="preview__slider" data-slider="slide">
+	<div class="swiper">
+		<div class="swiper-wrapper">
+			{% for slide in preview %}
+				{% include "item.twig" with {
+					label : slide.label,
+					image : slide.image,
+					title : slide.title,
+					desc : slide.desc,
+					link : slide.link,
+				} only %}
+			{% endfor %}
+		</div>
+	</div>
+</div>
+

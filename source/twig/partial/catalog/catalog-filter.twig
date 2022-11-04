@@ -1,0 +1,10 @@
+<div class="category-filter">
+	<button type="button" class="category-filter__item category-filter__item--active">
+		Все
+	</button>
+	{% for item in menu %}
+		<button type="button" class="category-filter__item{{ item.status ? ' category-filter__item--active' }}">
+			{{ item.title }}
+		</button>
+	{% endfor %}
+</div>

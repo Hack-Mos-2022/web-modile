@@ -1,0 +1,20 @@
+<div class="section-header">
+	<h3 class="section__title">
+		{{ title }}
+	</h3>
+	{% if link %}
+		<div class="section-header__meta">
+			<a href="{% if link.path %}{{ link.path }}{% else %}mobile.html{% endif %}">
+				<span>Все</span>
+				<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M6.19526 4.19526c.26035-.26035.68246-.26035.94281 0L10.4714 7.5286c.2604.26034.2604.68246 0 .9428l-3.33333 3.3333c-.26035.2604-.68246.2604-.94281 0-.26035-.2603-.26035-.6824 0-.9428L9.05719 8 6.19526 5.13807c-.26035-.26035-.26035-.68246 0-.94281Z" fill="currentColor" />
+				</svg>
+			</a>
+		</div>
+	{% endif %}
+	{% if desc %}
+		<div class="section-header__desc">
+			{{ desc }}
+		</div>
+	{% endif %}
+</div>

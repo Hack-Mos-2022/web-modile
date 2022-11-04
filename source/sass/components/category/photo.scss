@@ -1,0 +1,49 @@
+.category-photo__item {
+	display          : block;
+	width            : 100%;
+	transition       : background-color .3s ease;
+	text-decoration  : none;
+	color            : $color-white-100;
+	border-radius    : 12px;
+	background-color : $color-black-50;
+
+	&:hover {
+		color            : $color-white-100;
+		background-color : $color-black-60;
+	}
+}
+
+.category-photo__image {
+	display : block;
+
+	picture {
+		display : block;
+
+		img {
+			width          : 100%;
+			vertical-align : top;
+			border-radius  : 12px;
+		}
+	}
+}
+
+.category-photo__main {
+	padding : 20px 16px;
+}
+
+.category-photo__catalog {
+	font-size      : 13px;
+	font-weight    : 600;
+	font-style     : normal;
+	line-height    : 130%;
+	margin-bottom  : 8px;
+	letter-spacing : 0.002em;
+}
+
+.category-photo__title {
+	font-size      : 22px;
+	font-weight    : 700;
+	font-style     : normal;
+	line-height    : 130%;
+	letter-spacing : 0.002em;
+}

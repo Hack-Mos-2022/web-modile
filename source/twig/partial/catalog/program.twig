@@ -1,0 +1,38 @@
+<section class="category-impression section" data-slider="slide">
+	{% include "../site/section-header.twig" with {
+		title : "Программы экскурсий",
+		link  : true,
+	} only %}
+
+	<div class="category-impression__list">
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				{% for item in program %}
+					<div class="swiper-slide">
+						<a href="mobile.html" class="category-impression__item">
+							<div class="category-impression__image">
+								<div class="category-impression__catalog">
+									{{ item.catalog }}
+								</div>
+								<picture>
+									<source srcset="images/impression/{{ item.image }}.webp 1x, images/impression/{{ item.image }}@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/impression/{{ item.image }}.jpg 1x, images/impression/{{ item.image }}@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/impression/{{ item.image }}.jpg" width="327" height="253" loading="lazy" alt="">
+								</picture>
+							</div>
+							<div class="category-impression__main">
+								<div class="category-impression__meta">
+									{{ item.meta }}
+								</div>
+								<div class="category-impression__title">
+									{{ item.title }}
+								</div>
+							</div>
+						</a>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+

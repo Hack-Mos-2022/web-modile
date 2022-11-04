@@ -1,0 +1,84 @@
+.mobile-informer {
+	position      : fixed;
+	z-index       : 555;
+	right         : 0;
+	bottom        : 0;
+	left          : 0;
+	border-radius : 10px 10px 0 0;
+	background    : #212121;
+	box-shadow    : 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.mobile-informer__wrapper {
+	position     : relative;
+	box-sizing   : border-box;
+	max-width    : 680px;
+	margin-right : auto;
+	margin-left  : auto;
+	padding      : 20px;
+
+}
+
+.mobile-informer__close {
+	position                    : absolute;
+	z-index                     : 10;
+	top                         : 0;
+	right                       : 0;
+	display                     : flex;
+	align-items                 : flex-start;
+	flex-flow                   : row nowrap;
+	justify-content             : flex-end;
+	box-sizing                  : border-box;
+	width                       : 42px;
+	height                      : 42px;
+	padding                     : 16px 16px 0 0;
+	cursor                      : pointer;
+	transition                  : color .3s ease;
+	color                       : $color-white-100;
+	border                      : 0;
+	outline                     : 0;
+	background                  : transparent;
+	-webkit-tap-highlight-color : transparent;
+
+	svg {
+		display : block;
+	}
+
+	&:hover {
+		color : $color-white-80;
+	}
+}
+
+.mobile-informer__grid {
+	display         : flex;
+	align-items     : center;
+	flex-flow       : row nowrap;
+	justify-content : flex-start;
+	padding-right   : 50px;
+	text-decoration : none;
+}
+
+.mobile-informer__logo {
+	flex         : 0 0 auto;
+	margin-right : 21px;
+
+	img {
+		width          : 100%;
+		vertical-align : top;
+	}
+}
+
+.mobile-informer__title {
+	font-size   : 16px;
+	font-weight : 600;
+	font-style  : normal;
+	line-height : 120%;
+	color       : $color-white-100;
+}
+
+.mobile-informer__desc {
+	font-size   : 12px;
+	font-weight : 500;
+	line-height : 140%;
+	color       : $color-white-60;
+}

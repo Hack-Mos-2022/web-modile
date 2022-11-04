@@ -1,0 +1,25 @@
+.category-useful {
+	.swiper {
+		overflow : visible;
+		margin   : 0 -7px;
+	}
+
+	.swiper-slide {
+		width : 95%;
+		@media screen and (min-width : 375px) {
+			width : (327 + 14) * 1px;
+		}
+	}
+}
+
+.category-useful__item {
+	display         : block;
+	margin          : 0 7px;
+	text-decoration : none;
+
+	img {
+		width          : 100%;
+		vertical-align : top;
+		border-radius  : 6px;
+	}
+}

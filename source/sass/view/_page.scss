@@ -1,0 +1,108 @@
+.page-wrapper {
+	overflow : hidden;
+}
+
+.wrapper {
+	box-sizing : border-box;
+	width      : (680 + 48) * 1px;
+	max-width  : 100%;
+	margin     : auto;
+	padding    : 0 14px;
+	@media screen and (min-width : 365px) {
+		padding : 0 24px;
+	}
+}
+
+.page__title {
+	font-size     : 24px;
+	font-weight   : 600;
+	font-style    : normal;
+	line-height   : 110%;
+	margin-bottom : 17px;
+	color         : $color-white-100;
+}
+
+.page-header {
+	display         : flex;
+	align-items     : center;
+	flex-flow       : row nowrap;
+	justify-content : space-between;
+	margin-bottom   : 45px;
+	padding-top     : 15px;
+
+	&--static {
+		display : block;
+	}
+
+	.page__title {
+		margin-bottom : 0;
+	}
+}
+
+.page-header__meta {
+	margin-left : 24px;
+}
+
+.page-header__close {
+	display                     : flex;
+	align-items                 : center;
+	flex-flow                   : row nowrap;
+	justify-content             : center;
+	box-sizing                  : border-box;
+	width                       : 42px;
+	height                      : 42px;
+	padding                     : 0 0 0 0;
+	cursor                      : pointer;
+	transition                  : color .3s ease;
+	color                       : $color-white-100;
+	border                      : 0;
+	outline                     : 0;
+	background                  : transparent;
+	-webkit-tap-highlight-color : transparent;
+
+	svg {
+		display : block;
+	}
+
+	&:hover {
+		color : $color-white-80;
+	}
+}
+
+.page-header__back {
+	display                     : flex;
+	align-items                 : center;
+	flex-flow                   : row nowrap;
+	justify-content             : center;
+	box-sizing                  : border-box;
+	width                       : 31px;
+	height                      : 31px;
+	margin-bottom               : 30px;
+	margin-left                 : -10px;
+	padding                     : 0;
+	cursor                      : pointer;
+	transition                  : color .3s ease;
+	color                       : $color-white-100;
+	border                      : 0;
+	outline                     : 0;
+	background                  : transparent;
+	-webkit-tap-highlight-color : transparent;
+
+	&:hover {
+		color : $color-white-80;
+	}
+}
+
+.page-header__desc {
+	font-size      : 12px;
+	font-weight    : 500;
+	line-height    : 135%;
+	max-width      : 328px;
+	margin-top     : 17px;
+	letter-spacing : 0.3px;
+	color          : $color-white-60;
+}
+
+.page-main {
+	padding-bottom : 40px;
+}

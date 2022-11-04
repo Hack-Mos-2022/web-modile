@@ -1,0 +1,53 @@
+{
+	"preview" : [
+		{
+			"label" : "Готовые впечетления",
+			"title" : "Чем заняться<br> на выходные",
+			"desc"  : "32 маршрута",
+			"image" : "preview-1",
+			"link"  : "mobile.html"
+		},
+		{
+			"label" : "Готовые впечетления",
+			"title" : "Чем заняться<br> на выходные",
+			"desc"  : "43 маршрута",
+			"image" : "preview-2",
+			"link"  : "mobile.html"
+		},
+		{
+			"label" : "Готовые впечетления",
+			"title" : "Чем заняться<br> на выходные",
+			"desc"  : "22 маршрута",
+			"image" : "preview-3",
+			"link"  : "mobile.html"
+		},
+		{
+			"label" : "Готовые впечетления",
+			"title" : "Чем заняться<br> на выходные",
+			"desc"  : "4 маршрута",
+			"image" : "preview-4",
+			"link"  : "mobile.html"
+		},
+		{
+			"label" : "Готовые впечетления",
+			"title" : "Чем заняться<br> на выходные",
+			"desc"  : "12 маршрута",
+			"image" : "preview-5",
+			"link"  : "mobile.html"
+		},
+		{
+			"label" : "Готовые впечетления",
+			"title" : "Чем заняться<br> на выходные",
+			"desc"  : "32 маршрута",
+			"image" : "preview-6",
+			"link"  : "mobile.html"
+		},
+		{
+			"label" : "Готовые впечетления",
+			"title" : "Чем заняться<br> на выходные",
+			"desc"  : "11 маршрута",
+			"image" : "preview-7",
+			"link"  : "mobile.html"
+		}
+	]
+}

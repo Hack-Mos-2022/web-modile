@@ -1,0 +1,31 @@
+.article-tags {
+	margin-bottom  : 40px;
+	padding-bottom : 40px;
+	border-bottom  : 1px solid #2C2C2C;
+}
+
+.article-tags__grid {
+	display         : flex;
+	align-items     : flex-start;
+	flex-flow       : row nowrap;
+	justify-content : flex-start;
+	margin          : -4px;
+}
+
+.article-tags__item {
+	font-size       : 13px;
+	font-weight     : 600;
+	line-height     : 154%;
+	margin          : 4px;
+	padding         : 6px 16px;
+	transition      : color .3s ease;
+	text-decoration : none;
+	letter-spacing  : -0.02em;
+	color           : $color-white-100;
+	border-radius   : 20px;
+	background      : $color-black-60;
+
+	&:hover {
+		color : $color-white-80;
+	}
+}

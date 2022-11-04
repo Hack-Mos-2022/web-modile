@@ -1,0 +1,23 @@
+<section class="category-list section" data-slider="slide">
+	{% include "../site/section-header.twig" with {
+		title : "Категории",
+		link  : true
+	} only %}
+
+	<div class="swiper">
+		<div class="swiper-wrapper">
+			{% for item in catagory %}
+				<div class="swiper-slide">
+					<a href="mobile.html" class="category-list__item">
+						<div class="category-list__icon">
+							<img src="images/category/{{ item.image }}.svg" width="24" height="24" alt="{{ item.name|striptags }}">
+						</div>
+						<div class="category-list__name">
+							{{ item.name }}
+						</div>
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,9 @@
+{% extends "../template/layout.twig" %}
+{% block title %}VDNH - Карта интересов{% endblock %}
+{% set bodyClass ="body--map" %}
+{% block page %}
+	<div class="map">
+		{% include "../partial/map/header.twig" %}
+		<div class="map__wrapper"></div>
+	</div>
+{% endblock %}

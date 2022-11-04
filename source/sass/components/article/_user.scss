@@ -1,0 +1,41 @@
+.article-user {
+	position              : relative;
+	display               : grid;
+	padding               : 10px;
+	border-radius         : 4.58491px;
+	background            : $color-black-60;
+	gap                   : 0;
+	grid-template-columns : repeat(2, 1fr);
+
+	&:after {
+		content    : '';
+		position   : absolute;
+		top        : 10px;
+		bottom     : 10px;
+		left       : 50%;
+		width      : 1px;
+		background : #2C2C2C;
+	}
+}
+
+.article-user__cell {
+	font-size       : 13px;
+	font-weight     : 500;
+	line-height     : 135%;
+	box-sizing      : border-box;
+	padding         : 8px;
+	transition      : color .3s ease;
+	text-align      : center;
+	text-decoration : none;
+	letter-spacing  : 0.3px;
+	color           : $color-white-80;
+
+	&:hover {
+		color : $color-white-100;
+	}
+}
+
+.article-user__icon {
+	display : block;
+	margin  : 9px;
+}

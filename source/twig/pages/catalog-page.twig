@@ -1,0 +1,20 @@
+{% extends "../template/layout.twig" %}
+{% block title %}VDNH - Каталог{% endblock %}
+{% block page %}
+	<main class="page-main">
+		<div class="wrapper">
+			{% include "../partial/catalog/header.twig" with {
+				title : "Все впечетления<br> прямо сейчас",
+				catalog:true,
+				desc : "Мы подобрали события без очередей, вы сможете насладиться экскурсиями прямо сейчас"
+			} %}
+			{% include "../partial/catalog/catalog-filter.twig" with {
+				menu : menu
+			} only %}
+			{% include "../partial/catalog/item-list.twig" with {
+				list : list,
+				impression : impression,
+			} only %}
+		</div>
+	</main>
+{% endblock %}

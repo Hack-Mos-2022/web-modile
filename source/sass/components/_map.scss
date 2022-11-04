@@ -1,0 +1,20 @@
+@import "map/header";
+
+.map {
+	position : relative;
+}
+
+.map__wrapper {
+	position   : relative;
+	z-index    : 1;
+	width      : 100%;
+	background : $color-black-60;
+}
+
+// @formatter:off
+.map__wrapper,
+.map {
+	min-height: 100vh;
+	min-height : 100svh;
+}
+// @formatter:on

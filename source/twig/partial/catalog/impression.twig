@@ -1,0 +1,30 @@
+<section class="category-impression section">
+	{% include "../site/section-header.twig" with {
+		title : "Впечетления прямо сейчас",
+		link  : {
+			path : "catalog-page.html"
+		},
+		desc  : 'Подборка впечатлений с наименьшим количеством людей'
+	} only %}
+
+	<div class="category-impression__list">
+		<a href="item.html" class="category-impression__item">
+			<div class="category-impression__image">
+				<picture>
+					<source srcset="images/impression/item-1.webp 1x, images/impression/item-1@2x.webp 1.3x" type="image/webp">
+					<source srcset="images/impression/item-1.jpg 1x, images/impression/item-1@2x.jpg 1.3x" type="image/jpg">
+					<img src="images/impression/item-1.jpg" width="327" height="253" loading="lazy" alt="">
+				</picture>
+			</div>
+			<div class="category-impression__main">
+				<div class="category-impression__meta">
+					12 Экускурсий
+				</div>
+				<div class="category-impression__title">
+					Откройте для себя космос
+				</div>
+			</div>
+		</a>
+	</div>
+</section>
+

@@ -1,0 +1,33 @@
+<div class="mobile-informer"
+     x-data="{
+	     showBanner: true,
+	     cookieName: 'mobileInformer',
+	     cookie : docCookies.hasItem('mobileInformer')
+     }"
+     x-init="showBanner = !docCookies.hasItem(cookieName);"
+     x-show="showBanner"
+>
+	<div class="mobile-informer__wrapper">
+		<a href="mobile.html" class="mobile-informer__grid">
+			<div class="mobile-informer__logo">
+				<img src="images/logo-min.svg" width="55" height="55" loading="lazy" alt="ВДНХ">
+			</div>
+
+			<div class="mobile-informer__main">
+				<div class="mobile-informer__title">
+					Скачать приложение
+				</div>
+				<div class="mobile-informer__desc">
+					Все возможности в нашем приложении
+				</div>
+			</div>
+		</a>
+		<button type="button" class="mobile-informer__close"
+		        @click="showBanner = false; docCookies.setItem(cookieName, 'true', (60*24*60*60));"
+		>
+			<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M7.42616 6L11.7046 10.2785C12.0985 10.6723 12.0985 11.3108 11.7046 11.7046C11.3108 12.0985 10.6723 12.0985 10.2785 11.7046L6 7.42616L1.72153 11.7046C1.3277 12.0985 0.68919 12.0985 0.295367 11.7046C-0.0984557 11.3108 -0.0984557 10.6723 0.295367 10.2785L4.57384 6L0.295367 1.72153C-0.0984557 1.3277 -0.0984557 0.68919 0.295367 0.295367C0.68919 -0.0984557 1.3277 -0.0984557 1.72153 0.295367L6 4.57384L10.2785 0.295367C10.6723 -0.0984557 11.3108 -0.0984557 11.7046 0.295367C12.0985 0.68919 12.0985 1.3277 11.7046 1.72153L7.42616 6Z" fill="currentColor" />
+			</svg>
+		</button>
+	</div>
+</div>

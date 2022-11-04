@@ -1,0 +1,26 @@
+<div class="article-gallery" data-slider="gallery">
+	<a href="catalog-page.html" class="article-gallery__back">
+		<svg width="10" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="m4.0833 7.50043 4.5725-4.5725a1.29167 1.29167 0 0 0 0-1.82125 1.29174 1.29174 0 0 0-.91709-.38207 1.29166 1.29166 0 0 0-.91708.38207L1.34496 6.58335a1.29186 1.29186 0 0 0-.38207.91708 1.29166 1.29166 0 0 0 .38207.91709l5.47667 5.54128c.12069.1197.26383.2144.4212.2787.15738.0642.32589.0968.49588.0958.16999.001.33851-.0316.49588-.0958a1.29233 1.29233 0 0 0 .42121-.2787 1.29173 1.29173 0 0 0 0-1.8213L4.0833 7.50043Z" fill="currentColor" />
+		</svg>
+	</a>
+	<div class="swiper">
+		<div class="swiper-wrapper">
+			{% for item in gallery %}
+				<div class="swiper-slide">
+					<div class="article-gallery__image">
+						<picture>
+							<source srcset="images/item/gallery/{{ item }}.webp 1x, images/item/gallery/{{ item }}@2x.webp 1.3x" type="image/webp">
+							<source srcset="images/item/gallery/{{ item }}.jpg 1x, images/item/gallery/{{ item }}@2x.jpg 1.3x" type="image/png">
+							<img src="images/item/gallery/{{ item }}.jpg" height="572" alt="">
+						</picture>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<div class="article-gallery__title">
+		{{ title }}
+	</div>
+</div>

@@ -1,0 +1,24 @@
+{% extends "../template/layout.twig" %}
+{% block title %}VDNH - Каталог{% endblock %}
+{% block page %}
+	<main class="page-main">
+		<div class="wrapper">
+			{% include "../partial/catalog/header.twig" with {
+				title : "Каталог",
+				map : true
+			} %}
+			{% include "../partial/catalog/category.twig" %}
+			{% include "../partial/catalog/likes.twig" %}
+			{% include "../partial/catalog/impression.twig" %}
+			{% include "../partial/catalog/route.twig" %}
+			{% include "../partial/catalog/events.twig" %}
+			{% include "../partial/catalog/useful.twig" %}
+			{% include "../partial/catalog/todo.twig" %}
+			{% include "../partial/catalog/program.twig" %}
+			{% include "../partial/catalog/popular.twig" %}
+			{% include "../partial/catalog/week.twig" %}
+			{% include "../partial/catalog/photo.twig" %}
+			{% include "../partial/catalog/places.twig" %}
+		</div>
+	</main>
+{% endblock %}

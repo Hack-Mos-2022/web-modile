@@ -1,0 +1,49 @@
+// Arrow
+.swiper-button-prev,
+.swiper-button-next {
+	position                    : relative;
+	cursor                      : pointer;
+	user-select                 : none;
+	outline                     : 0;
+	-webkit-tap-highlight-color : transparent;
+	width                       : 46px;
+	flex                        : 0 0 46px;
+	height                      : 20px;
+	display                     : inline-block;
+	vertical-align              : top;
+	transition                  : opacity .3s ease;
+
+	&:after {
+		content  : '';
+		position : absolute;
+		top      : 0;
+		left     : 0;
+	}
+
+	@media screen and (min-width : 1076px) {
+		&:hover {
+			opacity : .7;
+		}
+	}
+
+	&.swiper-button-disabled {
+		opacity        : 0.3;
+		cursor         : auto;
+		pointer-events : none;
+	}
+}
+
+.swiper-button-prev {
+	margin-right : 25px;
+
+}
+
+.swiper-button-next {
+	margin-left : 25px;
+}
+
+.slider__pagination {
+	display         : flex;
+	flex-flow       : row nowrap;
+	justify-content : space-between;
+}

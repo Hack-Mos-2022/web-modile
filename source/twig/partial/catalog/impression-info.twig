@@ -1,0 +1,35 @@
+<section class="category-impression-info" data-slider="slide">
+	{% include "../site/section-header.twig" with {
+		title : "Впечетления прямо сейчас",
+		link  : true
+	} only %}
+
+	<div class="swiper">
+		<div class="swiper-wrapper">
+			{% for item in impression %}
+				<div class="swiper-slide">
+					<a href="mobile.html" class="category-impression-info__item">
+						<div class="category-impression__catalog">
+							{{ item.catalog }}
+						</div>
+						<div class="category-impression-info__main">
+							<div class="category-impression-info__title">
+								{{ item.title }}
+							</div>
+							<div class="category-impression-info__meta">
+								{{ item.meta }}
+							</div>
+						</div>
+						<div class="category-impression-info__image">
+							<picture>
+								<source srcset="images/impression/info/{{ item.image }}.webp 1x, images/impression/info/{{ item.image }}@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/impression/info/{{ item.image }}.jpg 1x, images/impression/info/{{ item.image }}@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/impression/info/{{ item.image }}.jpg" width="200" height="296" loading="lazy" alt="">
+							</picture>
+						</div>
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

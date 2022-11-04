@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>VDNH - Каталог</title>
+	<link rel="stylesheet" href="css/app.css">
+	<script src="js/vendors.min.js" defer></script>
+	<script src="js/app.min.js" defer></script>
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+
+</head>
+
+<body>
+	<div class="page-wrapper">
+
+		<main class="page-main">
+			<div class="wrapper">
+				<div class="page-header">
+
+					<h1 class="page__title">
+						Каталог
+					</h1>
+
+					<div class="page-header__meta">
+						<a class="page-header__close" href="map.html">
+							<svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="m13.4262 12 4.2784 4.2785c.3939.3938.3939 1.0323 0 1.4261-.3938.3939-1.0323.3939-1.4261 0L12 13.4262l-4.27847 4.2784c-.39383.3939-1.03234.3939-1.42616 0-.39383-.3938-.39383-1.0323 0-1.4261L10.5738 12 6.29537 7.72153c-.39383-.39383-.39383-1.03234 0-1.42616.39382-.39383 1.03233-.39383 1.42616 0L12 10.5738l4.2785-4.27843c.3938-.39383 1.0323-.39383 1.4261 0 .3939.39382.3939 1.03233 0 1.42616L13.4262 12Z" fill="currentColor" />
+							</svg>
+						</a>
+					</div>
+
+
+
+				</div>
+
+				<section class="category-list section" data-slider="slide">
+					<div class="section-header">
+						<h3 class="section__title">
+							Категории
+						</h3>
+
+						<div class="section-header__meta">
+							<a href="mobile.html">
+								<span>Все</span>
+								<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.19526 4.19526c.26035-.26035.68246-.26035.94281 0L10.4714 7.5286c.2604.26034.2604.68246 0 .9428l-3.33333 3.3333c-.26035.2604-.68246.2604-.94281 0-.26035-.2603-.26035-.6824 0-.9428L9.05719 8 6.19526 5.13807c-.26035-.26035-.26035-.68246 0-.94281Z" fill="currentColor" />
+								</svg>
+							</a>
+						</div>
+
+
+					</div>
+
+
+					<div class="swiper">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<a href="mobile.html" class="category-list__item">
+									<div class="category-list__icon">
+										<img src="images/category/category-1.svg" width="24" height="24" alt="Музыка">
+									</div>
+									<div class="category-list__name">
+										Музыка
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="mobile.html" class="category-list__item">
+									<div class="category-list__icon">
+										<img src="images/category/category-2.svg" width="24" height="24" alt="Еда">
+									</div>
+									<div class="category-list__name">
+										Еда
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="mobile.html" class="category-list__item">
+									<div class="category-list__icon">
+										<img src="images/category/category-3.svg" width="24" height="24" alt="Спорт">
+									</div>
+									<div class="category-list__name">
+										Спорт
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="mobile.html" class="category-list__item">
+									<div class="category-list__icon">
+										<img src="images/category/category-4.svg" width="24" height="24" alt="Прогулки">
+									</div>
+									<div class="category-list__name">
+										Прогулки
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="mobile.html" class="category-list__item">
+									<div class="category-list__icon">
+										<img src="images/category/category-5.svg" width="24" height="24" alt="Игры">
+									</div>
+									<div class="category-list__name">
+										Игры
+									</div>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+				<section class="category-likes section" data-slider="slide">
+					<div class="section-header">
+						<h3 class="section__title">
+							Вам понравится
+						</h3>
+
+						<div class="section-header__meta">
+							<a href="mobile.html">
+								<span>Все</span>
+								<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.19526 4.19526c.26035-.26035.68246-.26035.94281 0L10.4714 7.5286c.2604.26034.2604.68246 0 .9428l-3.33333 3.3333c-.26035.2604-.68246.2604-.94281 0-.26035-.2603-.26035-.6824 0-.9428L9.05719 8 6.19526 5.13807c-.26035-.26035-.26035-.68246 0-.94281Z" fill="currentColor" />
+								</svg>
+							</a>
+						</div>
+
+
+					</div>
+
+
+					<div class="swiper">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<a href="mobile.html" class="category-likes__item">
+									<div class="category-likes__image">
+										<picture>
+											<source srcset="images/likes/likes-1.webp 1x, images/likes/likes-1@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/likes/likes-1.jpg 1x, images/likes/likes-1@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/likes/likes-1.jpg" width="327" height="207" loading="lazy" alt="Семейный отдых">
+										</picture>
+									</div>
+									<div class="category-likes__category">
+										Оброзование
+									</div>
+
+									<div class="category-likes__main">
+										<div class="category-list__meta">
+											12 мест
+										</div>
+										<div class="category-list__title">
+											Семейный отдых
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="mobile.html" class="category-likes__item">
+									<div class="category-likes__image">
+										<picture>
+											<source srcset="images/likes/likes-2.webp 1x, images/likes/likes-2@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/likes/likes-2.jpg 1x, images/likes/likes-2@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/likes/likes-2.jpg" width="327" height="207" loading="lazy" alt="Для влюбленных">
+										</picture>
+									</div>
+									<div class="category-likes__category">
+										Маршрут
+									</div>
+
+									<div class="category-likes__main">
+										<div class="category-list__meta">
+											4 места
+										</div>
+										<div class="category-list__title">
+											Для влюбленных
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="mobile.html" class="category-likes__item">
+									<div class="category-likes__image">
+										<picture>
+											<source srcset="images/likes/likes-3.webp 1x, images/likes/likes-3@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/likes/likes-3.jpg 1x, images/likes/likes-3@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/likes/likes-3.jpg" width="327" height="207" loading="lazy" alt="Весело с детьми">
+										</picture>
+									</div>
+									<div class="category-likes__category">
+										Маршрут
+									</div>
+
+									<div class="category-likes__main">
+										<div class="category-list__meta">
+											24 места
+										</div>
+										<div class="category-list__title">
+											Весело с детьми
+										</div>
+									</div>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+				<section class="category-impression section">
+					<div class="section-header">
+						<h3 class="section__title">
+							Впечетления прямо сейчас
+						</h3>
+
+						<div class="section-header__meta">
+							<a href="catalog-page.html">
+								<span>Все</span>
+								<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.19526 4.19526c.26035-.26035.68246-.26035.94281 0L10.4714 7.5286c.2604.26034.2604.68246 0 .9428l-3.33333 3.3333c-.26035.2604-.68246.2604-.94281 0-.26035-.2603-.26035-.6824 0-.9428L9.05719 8 6.19526 5.13807c-.26035-.26035-.26035-.68246 0-.94281Z" fill="currentColor" />
+								</svg>
+							</a>
+						</div>
+
+
+						<div class="section-header__desc">
+							Подборка впечатлений с наименьшим количеством людей
+						</div>
+
+					</div>
+
+
+					<div class="category-impression__list">
+						<a href="item.html" class="category-impression__item">
+							<div class="category-impression__image">
+								<picture>
+									<source srcset="images/impression/item-1.webp 1x, images/impression/item-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/impression/item-1.jpg 1x, images/impression/item-1@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/impression/item-1.jpg" width="327" height="253" loading="lazy" alt="">
+								</picture>
+							</div>
+							<div class="category-impression__main">
+								<div class="category-impression__meta">
+									12 Экускурсий
+								</div>
+								<div class="category-impression__title">
+									Откройте для себя космос
+								</div>
+							</div>
+						</a>
+					</div>
+				</section>
+
+
+				<div class="section">
+					<a href="mobile.html" class="category-route">
+						<div class="category-route__meta">
+							Свой маршрут
+						</div>
+
+						<div class="category-route__title">
+							Подбор маршрута по вашим запросам
+						</div>
+
+						<div class="category-route__image">
+							<img src="images/route/image.svg" width="108" height="112" loading="lazy" alt="">
+						</div>
+					</a>
+				</div>
+
+				<section class="category-events section">
+					<div class="section-header">
+						<h3 class="section__title">
+							Экскурсии сегодня
+						</h3>
+
+						<div class="section-header__meta">
+							<a href="category.html">
+								<span>Все</span>
+								<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.19526 4.19526c.26035-.26035.68246-.26035.94281 0L10.4714 7.5286c.2604.26034.2604.68246 0 .9428l-3.33333 3.3333c-.26035.2604-.68246.2604-.94281 0-.26035-.2603-.26035-.6824 0-.9428L9.05719 8 6.19526 5.13807c-.26035-.26035-.26035-.68246 0-.94281Z" fill="currentColor" />
+								</svg>
+							</a>
+						</div>
+
+
+					</div>
+
+
+					<div class="category-events__list">
+
+						<a href="mobile.html" class="category-events__item">
+							<div class="category-events__image">
+								<picture>
+									<source srcset="images/events/item-1.webp 1x, images/events/item-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/events/item-1.jpg 1x, images/events/item-1@2x.jpg 1.3x" type="image/png">
+									<img src="images/events/item-1.jpg" width="70" height="70" alt="Школа дружбы: как узнать ВДНХ">
+								</picture>
+							</div>
+
+							<div class="category-events__main">
+								<div class="category-events__title">
+									Школа дружбы:<br> как узнать ВДНХ
+								</div>
+
+								<div class="category-events__meta">
+									Через 40 минут
+								</div>
+
+							</div>
+							<div class="category-events__icon">
+								<svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.195262 0.195262C0.455612 -0.0650874 0.877722 -0.0650874 1.13807 0.195262L4.4714 3.5286C4.73175 3.78894 4.73175 4.21106 4.4714 4.4714L1.13807 7.80474C0.877722 8.06509 0.455612 8.06509 0.195262 7.80474C-0.0650874 7.54439 -0.0650874 7.12228 0.195262 6.86193L3.05719 4L0.195262 1.13807C-0.0650871 0.877722 -0.0650871 0.455612 0.195262 0.195262Z" fill="currentColor" />
+								</svg>
+							</div>
+						</a>
+
+						<a href="mobile.html" class="category-events__item">
+							<div class="category-events__image">
+								<picture>
+									<source srcset="images/events/item-2.webp 1x, images/events/item-2@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/events/item-2.jpg 1x, images/events/item-2@2x.jpg 1.3x" type="image/png">
+									<img src="images/events/item-2.jpg" width="70" height="70" alt="Экскурсии «Интеллектуальная прогулка по ВДНХ»">
+								</picture>
+							</div>
+
+							<div class="category-events__main">
+								<div class="category-events__title">
+									Экскурсии «Интеллектуальная прогулка по ВДНХ»
+								</div>
+
+								<div class="category-events__meta">
+									Через 40 минут
+								</div>
+
+							</div>
+							<div class="category-events__icon">
+								<svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.195262 0.195262C0.455612 -0.0650874 0.877722 -0.0650874 1.13807 0.195262L4.4714 3.5286C4.73175 3.78894 4.73175 4.21106 4.4714 4.4714L1.13807 7.80474C0.877722 8.06509 0.455612 8.06509 0.195262 7.80474C-0.0650874 7.54439 -0.0650874 7.12228 0.195262 6.86193L3.05719 4L0.195262 1.13807C-0.0650871 0.877722 -0.0650871 0.455612 0.195262 0.195262Z" fill="currentColor" />
+								</svg>
+							</div>
+						</a>
+
+						<a href="mobile.html" class="category-events__item">
+							<div class="category-events__image">
+								<picture>
+									<source srcset="images/events/item-3.webp 1x, images/events/item-3@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/events/item-3.jpg 1x, images/events/item-3@2x.jpg 1.3x" type="image/png">
+									<img src="images/events/item-3.jpg" width="70" height="70" alt="Экскурсии «Путешествие во времени. ВДНХ. Сквозь годы и эпохи»">
+								</picture>
+							</div>
+
+							<div class="category-events__main">
+								<div class="category-events__title">
+									Экскурсии «Путешествие во времени. ВДНХ. Сквозь годы и эпохи»
+								</div>
+
+								<div class="category-events__meta">
+									Завтра с 10:30
+								</div>
+
+							</div>
+							<div class="category-events__icon">
+								<svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.195262 0.195262C0.455612 -0.0650874 0.877722 -0.0650874 1.13807 0.195262L4.4714 3.5286C4.73175 3.78894 4.73175 4.21106 4.4714 4.4714L1.13807 7.80474C0.877722 8.06509 0.455612 8.06509 0.195262 7.80474C-0.0650874 7.54439 -0.0650874 7.12228 0.195262 6.86193L3.05719 4L0.195262 1.13807C-0.0650871 0.877722 -0.0650871 0.455612 0.195262 0.195262Z" fill="currentColor" />
+								</svg>
+							</div>
+						</a>
+
+					</div>
+				</section>
+
+				<section class="category-useful section" data-slider="slide">
+					<div class="section-header">
+						<h3 class="section__title">
+							Полезное
+						</h3>
+
+
+					</div>
+
+
+					<div class="swiper">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<a href="mobile.html" class="category-useful__item">
+									<picture>
+										<source srcset="images/useful/item-1.webp 1x, images/useful/item-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/useful/item-1.png 1x, images/useful/item-1@2x.png 1.3x" type="image/png">
+										<img src="images/useful/item-1.png" width="327" height="428" loading="lazy" alt="">
+									</picture>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="mobile.html" class="category-useful__item">
+									<picture>
+										<source srcset="images/useful/item-2.webp 1x, images/useful/item-2@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/useful/item-2.png 1x, images/useful/item-2@2x.png 1.3x" type="image/png">
+										<img src="images/useful/item-2.png" width="327" height="428" loading="lazy" alt="">
+									</picture>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+				<section class="category-todo section">
+					<div class="section-header">
+						<h3 class="section__title">
+							Чем заняться в выходные
+						</h3>
+
+						<div class="section-header__meta">
+							<a href="mobile.html">
+								<span>Все</span>
+								<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.19526 4.19526c.26035-.26035.68246-.26035.94281 0L10.4714 7.5286c.2604.26034.2604.68246 0 .9428l-3.33333 3.3333c-.26035.2604-.68246.2604-.94281 0-.26035-.2603-.26035-.6824 0-.9428L9.05719 8 6.19526 5.13807c-.26035-.26035-.26035-.68246 0-.94281Z" fill="currentColor" />
+								</svg>
+							</a>
+						</div>
+
+
+					</div>
+
+
+					<div class="category-todo__list">
+						<a href="mobile.html" class="category-todo__item category-todo__item--big">
+							<div class="category-todo__category">
+								Онлайн
+							</div>
+
+							<div class="category-todo__main">
+								<div class="category-todo__meta">
+									12 выставок
+								</div>
+								<div class="category-todo__title">
+									Выставки которые стоит посетить
+								</div>
+							</div>
+
+							<div class="category-todo__image">
+								<picture>
+									<source srcset="images/todo/item-1.webp 1x, images/todo/item-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/todo/item-1.jpg 1x, images/todo/item-1@2x.jpg 1.3x" type="image/png">
+									<img src="images/todo/item-1.jpg" width="327" height="281" loading="lazy" alt="Выставки которые стоит посетить">
+								</picture>
+							</div>
+						</a>
+
+						<a href="mobile.html" class="category-todo__item">
+							<div class="category-todo__category">
+								Онлайн
+							</div>
+
+							<div class="category-todo__main">
+								<div class="category-todo__title">
+									Новые экскурсии
+								</div>
+							</div>
+
+							<div class="category-todo__image">
+								<picture>
+									<source srcset="images/todo/item-2.webp 1x, images/todo/item-2@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/todo/item-2.jpg 1x, images/todo/item-2@2x.jpg 1.3x" type="image/png">
+									<img src="images/todo/item-2.jpg" width="158" height="183" loading="lazy" alt="Выставки которые стоит посетить">
+								</picture>
+							</div>
+						</a>
+
+						<a href="mobile.html" class="category-todo__item category-todo__item--more">
+							<div class="category-todo__num">
+								22
+							</div>
+
+							<div class="category-todo__link">
+								<span>Все советы</span>
+								<svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.5 1.5L5.5 5.5L1.5 9.5" stroke="currentColor" stroke-width="2" />
+								</svg>
+							</div>
+						</a>
+					</div>
+				</section>
+
+				<section class="category-impression section" data-slider="slide">
+					<div class="section-header">
+						<h3 class="section__title">
+							Программы экскурсий
+						</h3>
+
+						<div class="section-header__meta">
+							<a href="mobile.html">
+								<span>Все</span>
+								<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.19526 4.19526c.26035-.26035.68246-.26035.94281 0L10.4714 7.5286c.2604.26034.2604.68246 0 .9428l-3.33333 3.3333c-.26035.2604-.68246.2604-.94281 0-.26035-.2603-.26035-.6824 0-.9428L9.05719 8 6.19526 5.13807c-.26035-.26035-.26035-.68246 0-.94281Z" fill="currentColor" />
+								</svg>
+							</a>
+						</div>
+
+
+					</div>
+
+
+					<div class="category-impression__list">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<a href="mobile.html" class="category-impression__item">
+										<div class="category-impression__image">
+											<div class="category-impression__catalog">
+												Экскурсия
+											</div>
+											<picture>
+												<source srcset="images/impression/item-2.webp 1x, images/impression/item-2@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/impression/item-2.jpg 1x, images/impression/item-2@2x.jpg 1.3x" type="image/jpg">
+												<img src="images/impression/item-2.jpg" width="327" height="253" loading="lazy" alt="">
+											</picture>
+										</div>
+										<div class="category-impression__main">
+											<div class="category-impression__meta">
+												«Классная программа»
+											</div>
+											<div class="category-impression__title">
+												Занятия для учеников 1-11 классов
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="mobile.html" class="category-impression__item">
+										<div class="category-impression__image">
+											<div class="category-impression__catalog">
+												Экскурсия
+											</div>
+											<picture>
+												<source srcset="images/impression/item-3.webp 1x, images/impression/item-3@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/impression/item-3.jpg 1x, images/impression/item-3@2x.jpg 1.3x" type="image/jpg">
+												<img src="images/impression/item-3.jpg" width="327" height="253" loading="lazy" alt="">
+											</picture>
+										</div>
+										<div class="category-impression__main">
+											<div class="category-impression__meta">
+												Бесплатные экскурсии
+											</div>
+											<div class="category-impression__title">
+												Бесплатные экскурсии в музее «Слово»
+											</div>
+										</div>
+									</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="category-popular section">
+					<div class="section-header">
+						<h3 class="section__title">
+							Популярные места
+						</h3>
+
+
+					</div>
+
+
+					<a href="mobile.html" class="category-popular__box">
+						<div class="category-popular__main">
+							<div class="category-popular__meta">
+								Море впечатлений!
+							</DIV>
+							<div class="category-popular__title">
+								Подборка для компании
+							</div>
+						</div>
+					</a>
+				</section>
+
+
+				<section class="category-week section" data-slider="slide">
+					<div class="section-header">
+						<h3 class="section__title">
+							На этой неделе
+						</h3>
+
+						<div class="section-header__meta">
+							<a href="mobile.html">
+								<span>Все</span>
+								<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.19526 4.19526c.26035-.26035.68246-.26035.94281 0L10.4714 7.5286c.2604.26034.2604.68246 0 .9428l-3.33333 3.3333c-.26035.2604-.68246.2604-.94281 0-.26035-.2603-.26035-.6824 0-.9428L9.05719 8 6.19526 5.13807c-.26035-.26035-.26035-.68246 0-.94281Z" fill="currentColor" />
+								</svg>
+							</a>
+						</div>
+
+
+					</div>
+
+
+					<div class="swiper">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<a href="mobile.html" class="category-week__item">
+									<div class="category-week__image">
+										<div class="category-week__meta">
+											23 места
+										</div>
+										<picture>
+											<source srcset="images/week/item-1.webp 1x, images/week/item-1@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/week/item-1.jpg 1x, images/week/item-1@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/week/item-1.jpg" width="224" height="253" loading="lazy" alt="">
+										</picture>
+									</div>
+									<div class="category-week__main">
+										<div class="category-week__title">
+											Музейный город
+										</div>
+										<div class="category-week__more">
+											<svg width="19" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.00977 8.91406h8.88563m-3.6098 3.60974 3.6097-3.60974-3.6097-3.60978" stroke="currentColor" stroke-width="1.47204" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="mobile.html" class="category-week__item">
+									<div class="category-week__image">
+										<div class="category-week__meta">
+											12 мест
+										</div>
+										<picture>
+											<source srcset="images/week/item-2.webp 1x, images/week/item-2@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/week/item-2.jpg 1x, images/week/item-2@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/week/item-2.jpg" width="224" height="253" loading="lazy" alt="">
+										</picture>
+									</div>
+									<div class="category-week__main">
+										<div class="category-week__title">
+											Экскурсии по ВДНХ
+										</div>
+										<div class="category-week__more">
+											<svg width="19" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.00977 8.91406h8.88563m-3.6098 3.60974 3.6097-3.60974-3.6097-3.60978" stroke="currentColor" stroke-width="1.47204" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
+									</div>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+				<section class="category-photo section">
+					<div class="section-header">
+						<h3 class="section__title">
+							В ближайшие 6 часов
+						</h3>
+
+						<div class="section-header__meta">
+							<a href="mobile.html">
+								<span>Все</span>
+								<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.19526 4.19526c.26035-.26035.68246-.26035.94281 0L10.4714 7.5286c.2604.26034.2604.68246 0 .9428l-3.33333 3.3333c-.26035.2604-.68246.2604-.94281 0-.26035-.2603-.26035-.6824 0-.9428L9.05719 8 6.19526 5.13807c-.26035-.26035-.26035-.68246 0-.94281Z" fill="currentColor" />
+								</svg>
+							</a>
+						</div>
+
+
+					</div>
+
+
+					<a href="mobile.html" class="category-photo__item">
+						<div class="category-photo__image">
+							<picture>
+								<source srcset="images/photo/item.webp 1x, images/photo/item@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/photo/item.jpg 1x, images/photo/item@2x.jpg 1.3x" type="image/png">
+								<img src="images/photo/item.jpg" width="327" height="298" loading="lazy" alt="">
+							</picture>
+						</div>
+						<div class="category-photo__main">
+							<div class="category-photo__catalog">
+								Фотовыставка
+							</div>
+							<div class="category-photo__title">
+								«Сердце Югры»
+							</div>
+						</div>
+					</a>
+				</section>
+
+				<section class="category-place section" data-slider="slide">
+					<div class="section-header">
+						<h3 class="section__title">
+							Популярные заведения
+						</h3>
+
+						<div class="section-header__meta">
+							<a href="mobile.html">
+								<span>Все</span>
+								<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.19526 4.19526c.26035-.26035.68246-.26035.94281 0L10.4714 7.5286c.2604.26034.2604.68246 0 .9428l-3.33333 3.3333c-.26035.2604-.68246.2604-.94281 0-.26035-.2603-.26035-.6824 0-.9428L9.05719 8 6.19526 5.13807c-.26035-.26035-.26035-.68246 0-.94281Z" fill="currentColor" />
+								</svg>
+							</a>
+						</div>
+
+
+					</div>
+
+
+					<div class="category-place__place">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<a href="mobile.html" class="category-place__item">
+										<div class="category-place__image">
+											<div class="category-place__rating">
+												<svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M11.1687 5.28112a.50024.50024 0 0 0-.1653-.23125.5004.5004 0 0 0-.2647-.10375l-2.84501-.415-1.275-2.585a.5.5 0 0 0-.9 0l-1.275 2.58-2.845.42a.4999.4999 0 0 0-.25112.11208.4999.4999 0 0 0-.15388.22792.49997.49997 0 0 0 .125.5l2.065 2-.5 2.83998a.49985.49985 0 0 0 .02694.2792.50018.50018 0 0 0 .17306.2208.49981.49981 0 0 0 .25752.0922.50022.50022 0 0 0 .26748-.0572l2.56-1.33498 2.55 1.33998a.46448.46448 0 0 0 .23.06.49993.49993 0 0 0 .295-.095.50025.50025 0 0 0 .17306-.2208.49985.49985 0 0 0 .02694-.2792l-.5-2.83998 2.06501-2a.50058.50058 0 0 0 .1539-.23183.50034.50034 0 0 0 .0061-.27817Zm-3.07501 2a.4999.4999 0 0 0-.145.445l.36 2.095-1.88-1a.5.5 0 0 0-.47 0l-1.88 1 .36-2.095a.49993.49993 0 0 0-.145-.445l-1.5-1.5 2.105-.305a.49998.49998 0 0 0 .38-.275l.89-1.905.94 1.91a.49993.49993 0 0 0 .38.275l2.105.305-1.5 1.495Z" fill="#fff" />
+												</svg>
+												<span>4.5 (3 432)</span>
+											</div>
+											<picture>
+												<source srcset="images/place/item-1.webp 1x, images/place/item-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/place/item-1.jpg 1x, images/place/item-1@2x.jpg 1.3x" type="image/jpg">
+												<img src="images/place/item-1.jpg" width="158" height="157" loading="lazy" alt="">
+											</picture>
+										</div>
+										<div class="category-place__main">
+											<div class="category-place__title">
+												Ресторан
+											</div>
+											<div class="category-place__meta">
+												Бары/рестораны
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="mobile.html" class="category-place__item">
+										<div class="category-place__image">
+											<div class="category-place__rating">
+												<svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M11.1687 5.28112a.50024.50024 0 0 0-.1653-.23125.5004.5004 0 0 0-.2647-.10375l-2.84501-.415-1.275-2.585a.5.5 0 0 0-.9 0l-1.275 2.58-2.845.42a.4999.4999 0 0 0-.25112.11208.4999.4999 0 0 0-.15388.22792.49997.49997 0 0 0 .125.5l2.065 2-.5 2.83998a.49985.49985 0 0 0 .02694.2792.50018.50018 0 0 0 .17306.2208.49981.49981 0 0 0 .25752.0922.50022.50022 0 0 0 .26748-.0572l2.56-1.33498 2.55 1.33998a.46448.46448 0 0 0 .23.06.49993.49993 0 0 0 .295-.095.50025.50025 0 0 0 .17306-.2208.49985.49985 0 0 0 .02694-.2792l-.5-2.83998 2.06501-2a.50058.50058 0 0 0 .1539-.23183.50034.50034 0 0 0 .0061-.27817Zm-3.07501 2a.4999.4999 0 0 0-.145.445l.36 2.095-1.88-1a.5.5 0 0 0-.47 0l-1.88 1 .36-2.095a.49993.49993 0 0 0-.145-.445l-1.5-1.5 2.105-.305a.49998.49998 0 0 0 .38-.275l.89-1.905.94 1.91a.49993.49993 0 0 0 .38.275l2.105.305-1.5 1.495Z" fill="#fff" />
+												</svg>
+												<span>4.5 (3 432)</span>
+											</div>
+											<picture>
+												<source srcset="images/place/item-2.webp 1x, images/place/item-2@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/place/item-2.jpg 1x, images/place/item-2@2x.jpg 1.3x" type="image/jpg">
+												<img src="images/place/item-2.jpg" width="158" height="157" loading="lazy" alt="">
+											</picture>
+										</div>
+										<div class="category-place__main">
+											<div class="category-place__title">
+												Бар Москва
+											</div>
+											<div class="category-place__meta">
+												Бары/рестораны
+											</div>
+										</div>
+									</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</main>
+
+	</div>
+
+	<div class="mobile-informer" x-data="{
+	     showBanner: true,
+	     cookieName: 'mobileInformer',
+	     cookie : docCookies.hasItem('mobileInformer')
+     }" x-init="showBanner = !docCookies.hasItem(cookieName);" x-show="showBanner">
+		<div class="mobile-informer__wrapper">
+			<a href="mobile.html" class="mobile-informer__grid">
+				<div class="mobile-informer__logo">
+					<img src="images/logo-min.svg" width="55" height="55" loading="lazy" alt="ВДНХ">
+				</div>
+
+				<div class="mobile-informer__main">
+					<div class="mobile-informer__title">
+						Скачать приложение
+					</div>
+					<div class="mobile-informer__desc">
+						Все возможности в нашем приложении
+					</div>
+				</div>
+			</a>
+			<button type="button" class="mobile-informer__close" @click="showBanner = false; docCookies.setItem(cookieName, 'true', (60*24*60*60));">
+				<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M7.42616 6L11.7046 10.2785C12.0985 10.6723 12.0985 11.3108 11.7046 11.7046C11.3108 12.0985 10.6723 12.0985 10.2785 11.7046L6 7.42616L1.72153 11.7046C1.3277 12.0985 0.68919 12.0985 0.295367 11.7046C-0.0984557 11.3108 -0.0984557 10.6723 0.295367 10.2785L4.57384 6L0.295367 1.72153C-0.0984557 1.3277 -0.0984557 0.68919 0.295367 0.295367C0.68919 -0.0984557 1.3277 -0.0984557 1.72153 0.295367L6 4.57384L10.2785 0.295367C10.6723 -0.0984557 11.3108 -0.0984557 11.7046 0.295367C12.0985 0.68919 12.0985 1.3277 11.7046 1.72153L7.42616 6Z" fill="currentColor" />
+				</svg>
+			</button>
+		</div>
+	</div>
+
+
+
+
+</body>
+
+</html>
