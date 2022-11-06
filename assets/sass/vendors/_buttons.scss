@@ -1,0 +1,322 @@
+// -----------------------------------------------
+//  Button config
+// -----------------------------------------------
+
+$btn-font-weight           : 700;
+$btn-line-height           : 1.25;
+$btn-border-width          : 1px;
+$btn-padding               : 14px 30px;
+$btn-font-size             : 16px;
+$btn-border-radius         : 12px;
+$btn-transition            : background .3s ease, color .3s ease;
+
+// OUTLINE
+
+// SIZE
+// Big
+$btn-padding-big           : 14px 30px;
+$btn-font-size-big         : 16px;
+// Small
+$btn-padding-small         : 8px 30px;
+$btn-font-size-small       : 13px;
+
+// LOADING
+$btn-loading-color         : #FFF;
+$btn-loading-color-outline : #000;
+// SPACING
+$btn-spacing-x             : 5px;
+$btn-spacing-y             : 5px;
+
+// -----------------------------------------------
+//  Button style
+// -----------------------------------------------
+
+.b-btn {
+	font-size        : $btn-font-size;
+	font-weight      : $btn-font-weight;
+	line-height      : $btn-line-height;
+	position         : relative;
+	display          : inline-flex;
+	align-items      : center;
+	flex-flow        : row nowrap;
+	justify-content  : center;
+	box-sizing       : border-box;
+	padding          : $btn-padding;
+	cursor           : pointer;
+	user-select      : none;
+	transition       : $btn-transition;
+	text-align       : center;
+	vertical-align   : middle;
+	white-space      : nowrap;
+	text-decoration  : none;
+	border           : $btn-border-width solid transparent;
+	border-radius    : $btn-border-radius;
+	background-color : transparent;
+
+	&:hover,
+	&:focus-within,
+	&.focus {
+		outline : 0;
+	}
+
+	&.disabled,
+	&:disabled {
+		cursor     : default;
+		opacity    : .45;
+		background : inherit;
+		box-shadow : none;
+	}
+
+	&:active,
+	&.active {
+
+	}
+
+	> svg {
+		flex          : 0 0 auto;
+		margin-top    : -5px;
+		margin-bottom : -5px;
+
+		&:first-child {
+			margin-right : 4px;
+		}
+
+		&:last-child {
+			margin-left : 4px;
+		}
+	}
+
+	// SIZE
+	// Big
+	&--big {
+		font-size : $btn-font-size-big;
+		padding   : $btn-padding-big;
+	}
+
+	&--small {
+		font-size : $btn-font-size-small;
+		padding   : $btn-padding-small;
+	}
+
+	// COLOR
+	&--black {
+		color            : $color-white-80;
+		background-color : $color-black-40;
+
+		&:hover,
+		&:focus-within,
+		&:active,
+		&.active {
+			color            : $color-white-90;
+			background-color : $color-black-60;
+		}
+
+		&.disabled,
+		&:disabled {
+			&:hover,
+			&:focus-within,
+			&:active,
+			&.active {
+				color            : $color-white-60;
+				background-color : $color-black-30;
+			}
+		}
+	}
+
+	&--white {
+		color            : $color-black-90;
+		background-color : $color-white-100;
+
+		&:hover,
+		&:focus-within,
+		&:active,
+		&.active {
+			color            : $color-black-80;
+			background-color : $color-white-70;
+		}
+
+		&.disabled,
+		&:disabled {
+			&:hover,
+			&:focus-within,
+			&:active,
+			&.active {
+				color            : $color-black-90;
+				background-color : $color-white-100;
+			}
+		}
+	}
+
+	&--red {
+		color            : $color-white-100;
+		background-color : $color-main-red;
+
+		&:hover,
+		&:focus-within,
+		&:active,
+		&.active {
+			color            : $color-white-100;
+			background-color : $color-main-red-100;
+		}
+
+		&.disabled,
+		&:disabled {
+			&:hover,
+			&:focus-within,
+			&:active,
+			&.active {
+				color            : $color-white-100;
+				background-color : $color-main-red;
+			}
+		}
+	}
+
+	&--green {
+		color            : $color-black-100;
+		background-color : $color-main-green;
+
+		&:hover,
+		&:focus-within,
+		&:active,
+		&.active {
+			color            : $color-black-90;
+			background-color : $color-main-green-100;
+		}
+
+		&.disabled,
+		&:disabled {
+			&:hover,
+			&:focus-within,
+			&:active,
+			&.active {
+				color            : $color-black-100;
+				background-color : $color-main-green;
+			}
+		}
+	}
+
+	&--grey-outline {
+		color            : $color-white-100;
+		background-color : transparent;
+		box-shadow       : inset 0 0 0 1px $color-white-50;
+
+		&:hover,
+		&:focus-within,
+		&:active,
+		&.active {
+			color            : $color-white-90;
+			background-color : $color-black-100;
+		}
+
+		&.disabled,
+		&:disabled {
+			&:hover,
+			&:focus-within,
+			&:active,
+			&.active {
+				color            : $color-white-100;
+				background-color : transparent;
+				box-shadow       : inset 0 0 0 1px $color-white-50;
+			}
+		}
+	}
+
+	&--blank {
+		font-weight : 400;
+		color       : $color-white-60;
+		background  : transparent;
+
+		&:hover,
+		&:focus-within,
+		&:active,
+		&.active {
+			color            : $color-white-100;
+			background-color : $color-black-90;
+		}
+
+		&.disabled,
+		&:disabled {
+			&:hover,
+			&:focus-within,
+			&:active,
+			&.active {
+				color      : $color-white-60;
+				background : transparent;
+			}
+		}
+	}
+
+	// FULL-SIZE
+	&--full-size {
+		display : block;
+		width   : 100%;
+
+		+ .full-size {
+			margin-right : $btn-spacing-y;
+		}
+	}
+
+	// SPACING
+	& + .b-btn {
+		margin-left : $btn-spacing-x;
+	}
+}
+
+.b-btn-grouping {
+	display : inline-block;
+
+	.b-btn {
+		float         : left;
+		margin-right  : 0;
+		border-radius : 0;
+
+		&:first-child {
+			border-radius : $btn-border-radius 0 0 $btn-border-radius;
+		}
+
+		&:last-child {
+			border-radius : 0 $btn-border-radius $btn-border-radius 0;
+		}
+
+		&.outline {
+			z-index     : 1;
+			margin-left : -1px;
+
+			&:hover {
+				z-index : 2;
+			}
+
+			&.active {
+				z-index : 3;
+			}
+
+			&:first-child {
+				margin-left : 0;
+			}
+		}
+	}
+}
+
+@keyframes loadingSpin {
+	0% {
+		transform : rotate(0deg);
+	}
+	100% {
+		transform : rotate(360deg);
+	}
+}
+
+// Future-proof disabling of clicks on `<a>` elements
+a.b-btn.disabled,
+fieldset[disabled] a.b-btn {
+	pointer-events : none;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	&.full-size {
+		width : 100%;
+	}
+}

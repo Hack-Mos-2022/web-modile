@@ -1,0 +1,67 @@
+.mobile-app {
+	display               : grid;
+	align-items           : center;
+	box-sizing            : border-box;
+	width                 : 100%;
+	padding-top           : 20px;
+	padding-bottom        : 20px;
+	text-align            : center;
+	grid-template-columns : 1fr;
+	grid-template-rows    : 1fr auto;
+	gap                   : 20px 0;
+	grid-template-areas   :
+    "main"
+    "button";
+	@media screen and (min-height : 701px) {
+		padding-top    : 40px;
+		padding-bottom : 40px;
+	}
+}
+
+.mobile-app__main {
+	grid-area : main;
+}
+
+.mobile-app__icon {
+	margin-bottom : 35px;
+}
+
+.mobile-app__title {
+	font-size      : 24px;
+	font-weight    : 600;
+	line-height    : 120%;
+	max-width      : 400px;
+	margin-right   : auto;
+	margin-left    : auto;
+	text-align     : center;
+	letter-spacing : 0.0703846px;
+	color          : $color-gray-beground;
+}
+
+.mobile-app__desc {
+	font-size   : 14px;
+	font-weight : 400;
+	line-height : 140%;
+	text-align  : center;
+	color       : $color-white-70;
+}
+
+.mobile-app__button {
+	grid-area : button;
+
+	.b-btn {
+		width : 100%;
+	}
+
+	.b-btn + .b-btn {
+		margin : 40px 0 0;
+	}
+}
+
+// @formatter:off
+.mobile-app {
+	min-height: 100vh;
+	min-height : 100svh;
+}
+// @formatter:on
+

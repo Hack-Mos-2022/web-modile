@@ -1,0 +1,37 @@
+@font-face {
+	font-family  : 'Gilroy';
+	src          : url('~assets/fonts/gilroy-regular.woff2') format('woff2'),
+	url('~assets/fonts/gilroy-regular.woff') format('woff'),
+	url('~assets/fonts/gilroy-regular.ttf') format('truetype');
+	font-weight  : normal;
+	font-display : swap;
+}
+
+@font-face {
+	font-family  : 'Gilroy';
+	src          : url('~assets/fonts/gilroy-medium.woff2') format('woff2'),
+	url('~assets/fonts/gilroy-medium.woff') format('woff'),
+	url('~assets/fonts/gilroy-medium.ttf') format('truetype');
+	font-weight  : 500;
+	font-display : swap;
+}
+
+@font-face {
+	font-family  : 'Gilroy';
+	src          : url('~assets/fonts/gilroy-bold.woff2') format('woff2'),
+	url('~assets/fonts/gilroy-bold.woff') format('woff'),
+	url('~assets/fonts/gilroy-bold.ttf') format('truetype');
+	font-weight  : 700;
+	font-display : swap;
+}
+
+
+@font-face {
+	font-family  : 'Gilroy';
+	src          : url('~assets/fonts/gilroy-semibold.woff2') format('woff2'),
+	url('~assets/fonts/gilroy-semibold.woff') format('woff'),
+	url('~assets/fonts/gilroy-semibold.ttf') format('truetype');
+	font-weight  : 600;
+	font-display : swap;
+}
+

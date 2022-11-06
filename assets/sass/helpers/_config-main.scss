@@ -1,0 +1,62 @@
+// Variables
+// ---------
+// Color
+$color-main-red           : #EF4850;
+$color-main-red-100       : #D33A44;
+$color-main-green         : #39D79E;
+$color-main-green-100     : #52E5B0;
+$color-gray-beground      : #AAA;
+$color-white-100          : #FFF;
+$color-white-90           : #E7E7E7;
+$color-white-80           : #CFCFCF;
+$color-white-70           : #B7B7B7;
+$color-white-60           : #A0A0A0;
+$color-white-50           : #838383;
+$color-white-40           : #707070;
+$color-black-30           : #585858;
+$color-black-40           : #3A3A3A;
+$color-black-50           : #292929;
+$color-black-60           : #202020;
+$color-black-70           : #141414;
+$color-black-80           : #111;
+$color-black-90           : #0C0C0C;
+$color-black-100          : #000;
+$color-orange             : #EFC048;
+$color-orange-100         : #E2B629;
+$color-blue               : #48BDEF;
+$color-blue-100           : #25A4D5;
+$link-color               : $color-blue;
+$link-color-hover         : $color-blue-100;
+
+$body-font-size           : 13px;
+$body-font                : 'Gilroy', system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+$body-line-height         : 135%;
+$body-color               : $color-white-80;
+$body-background          : $color-black-80;
+
+// Table
+$table-header-font-weight : 700;
+$table-cell-padding       : 5px 10px;
+
+// Text
+$heading-font-weight      : 700;
+$heading-line-height      : 1.2;
+$heading-margin           : 0 0 1em;
+$paragraph-margin         : 0 0 1.7em;
+$list-margin              : 2.6em 0;
+$h1                       : 28px;
+$h2                       : 24px;
+$h3                       : 20px;
+$h4                       : 18px;
+$h5                       : 16px;
+$bold-font-weight         : 700;
+$space-1                  : 1em;
+$space-2                  : 2em;
+$space-3                  : 3em;
+$text-small               : 14px;
+
+
+$break-desktop            : 1081px;
+$break-desktop-max        : 1080px;
+$break-table              : 681px;
+$break-table-max          : 680px;

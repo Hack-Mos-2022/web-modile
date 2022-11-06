@@ -1,0 +1,22 @@
+[
+	{
+		"image" : "category-1",
+		"name"  : "Музыка"
+	},
+	{
+		"image" : "category-2",
+		"name"  : "Еда"
+	},
+	{
+		"image" : "category-3",
+		"name"  : "Спорт"
+	},
+	{
+		"image" : "category-4",
+		"name"  : "Прогулки"
+	},
+	{
+		"image" : "category-5",
+		"name"  : "Игры"
+	}
+]

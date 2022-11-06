@@ -1,0 +1,84 @@
+.map-header {
+	position : absolute;
+	z-index  : 100;
+	top      : 15px;
+	right    : 0;
+	left     : 0;
+}
+
+.map-header__wrapper {
+	display         : flex;
+	align-items     : flex-start;
+	flex-flow       : row nowrap;
+	justify-content : flex-start;
+}
+
+
+.map-header__input {
+	position : relative;
+	flex     : 1 1 auto;
+
+	input {
+		font-family   : $body-font;
+		font-size     : 16px;
+		font-weight   : 600;
+		line-height   : 1.125;
+		box-sizing    : border-box;
+		width         : 100%;
+		max-width     : 100%;
+		height        : auto;
+		padding       : 11px 40px;
+		color         : $color-black-80;
+		border        : 0;
+		border-radius : 10px;
+		outline       : 0;
+		background    : #FFF url("../images/icon/search.svg") no-repeat 11px 50%;
+		box-shadow    : 0 4px 4px rgba(0, 0, 0, 0.14);
+
+		@include placeholder {
+			opacity : 1;
+			color   : $color-black-60;
+		}
+
+		&:focus {
+			box-shadow : 0 5px 12px rgba(0, 0, 0, 0.18);
+		}
+	}
+}
+
+.map-header__logo {
+	position        : absolute;
+	top             : 50%;
+	right           : 7px;
+	display         : block;
+	box-sizing      : border-box;
+	transform       : translateY(-50%);
+	text-decoration : none;
+}
+
+.map-header__button {
+	display                     : flex;
+	align-items                 : center;
+	flex                        : 0 0 auto;
+	flex-flow                   : row nowrap;
+	justify-content             : center;
+	box-sizing                  : border-box;
+	width                       : 41px;
+	height                      : 41px;
+	margin-left                 : 6px;
+	padding                     : 0;
+	cursor                      : pointer;
+	transition                  : background .3s ease;
+	color                       : $color-black-60;
+	border                      : 0;
+	border-radius               : 10px;
+	outline                     : 0;
+	background                  : $color-white-100;
+	box-shadow                  : 0 4px 4px rgba(0, 0, 0, 0.14);
+	-webkit-tap-highlight-color : transparent;
+
+	&:hover {
+		color      : $color-black-80;
+		background : $color-white-90;
+	}
+}

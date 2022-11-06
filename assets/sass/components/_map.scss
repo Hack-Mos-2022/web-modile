@@ -1,0 +1,30 @@
+@import "map/header";
+
+.map {
+	position : relative;
+}
+
+.map__wrapper {
+	position              : relative;
+	z-index               : 1;
+	display               : grid;
+	width                 : 100%;
+	background            : $color-black-60;
+	gap                   : 0;
+	grid-template-columns : 100%;
+	grid-template-rows    : 1fr;
+
+	canvas,
+	.mapboxgl-map {
+		width  : 100%;
+		height : 100%;
+	}
+}
+
+// @formatter:off
+.map__wrapper,
+.map {
+	min-height: 100vh;
+	min-height : 100svh;
+}
+// @formatter:on
