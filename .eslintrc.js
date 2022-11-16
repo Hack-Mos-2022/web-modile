@@ -31,6 +31,8 @@ module.exports = {
 		'no-mixed-spaces-and-tabs'          : 'off',
 		'vue/html-indent'                   : ['error', 'tab'],
 		'vue/html-closing-bracket-newline'  : 'off',
+		'vue/no-v-html'                     : 'off',
+		'vue/no-mutating-props'             : 'off',
 		'max-len'                           : 'off',
 		'import/no-import-module-exports'   : 'off',
 		'no-mixed-spaces-and-tab'           : 'off',

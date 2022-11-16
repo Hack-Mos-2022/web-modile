@@ -1,22 +1,85 @@
 [
 	{
-		"image" : "category-1",
-		"name"  : "Музыка"
+		"id"    : "7266",
+		"sort"  : "10",
+		"name"  : "Концерты",
+		"icon"  : "https://vdnh.ru/upload/iblock/a72/a72e0588599fc3dc7dd5ff52f39353e0.svg",
+		"color" : "#8a539d"
 	},
 	{
-		"image" : "category-2",
-		"name"  : "Еда"
+		"id"    : "7267",
+		"sort"  : "20",
+		"name"  : "Музеи",
+		"icon"  : "https://vdnh.ru/upload/iblock/90a/90a3679e2a858cd25657f74067e06a4c.svg",
+		"color" : "#e72d3e"
 	},
 	{
-		"image" : "category-3",
-		"name"  : "Спорт"
+		"id"    : "7268",
+		"sort"  : "30",
+		"name"  : "Еда",
+		"icon"  : "https://vdnh.ru/upload/iblock/fdc/fdc5b5d3a14b41106db3a1aa20fa1f15.svg",
+		"color" : "#893e4f"
 	},
 	{
-		"image" : "category-4",
-		"name"  : "Прогулки"
+		"id"    : "7269",
+		"sort"  : "40",
+		"name"  : "Транспорт",
+		"icon"  : "https://vdnh.ru/upload/iblock/3a5/3a5a06e492f84840277b014edbc92af0.svg",
+		"color" : "#3a8f8c"
 	},
 	{
-		"image" : "category-5",
-		"name"  : "Игры"
+		"id"    : "7270",
+		"sort"  : "50",
+		"name"  : "Обучение",
+		"icon"  : "https://vdnh.ru/upload/iblock/a32/a32090e645f72f6456bb191de395fa9b.svg",
+		"color" : "#f07e3a"
+	},
+	{
+		"id"   : "7271",
+		"sort" : "60",
+		"name" : "Туалеты",
+		"icon" : "https://vdnh.ru/upload/iblock/31f/31fb6df366ad5a57a175ce00af22a774.svg"
+	},
+	{
+		"id"    : "7272",
+		"sort"  : "70",
+		"name"  : "Спорт",
+		"icon"  : "https://vdnh.ru/upload/iblock/d74/d749c19d735176009720566eac621d2a.svg",
+		"color" : "#2da1db"
+	},
+	{
+		"id"    : "7274",
+		"sort"  : "81",
+		"name"  : "Экскурсии",
+		"icon"  : "https://vdnh.ru/upload/iblock/bf8/bf8a8db62a11e44c06eb9300d34abc2a.svg",
+		"color" : "#e72d3e"
+	},
+	{
+		"id"    : "7275",
+		"sort"  : "91",
+		"name"  : "Лекции",
+		"icon"  : "https://vdnh.ru/upload/iblock/873/873f09f26cba44309f67a4d373b566d3.svg",
+		"color" : "#f07e3a"
+	},
+	{
+		"id"    : "7276",
+		"sort"  : "101",
+		"name"  : "Сувениры",
+		"icon"  : "https://vdnh.ru/upload/iblock/b5a/b5a8e0cbf931277564468b643e6584d1.svg",
+		"color" : "#575756"
+	},
+	{
+		"id"    : "7273",
+		"sort"  : "111",
+		"name"  : "Фонтаны",
+		"icon"  : "https://vdnh.ru/upload/iblock/752/752afd7d08a78505962cc794b90da9cf.svg",
+		"color" : "#68b650"
+	},
+	{
+		"id"    : "7277",
+		"sort"  : "120",
+		"name"  : "Парковки",
+		"icon"  : "https://vdnh.ru/upload/iblock/5ec/5ecb4b686232cd4ee5a58a603c2f52f6.svg",
+		"color" : "#575756"
 	}
 ]

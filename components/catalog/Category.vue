@@ -7,13 +7,13 @@
 		<div class="swiper">
 			<div class="swiper-wrapper">
 				<div
-					v-for="(item, index) in category"
-					:key="`category-${index}`"
+					v-for="item in category"
+					:key="item.id"
 					class="swiper-slide"
 				>
 					<NuxtLink class="category-list__item" to="/category">
 						<div class="category-list__icon">
-							<img :alt="item.name" :src="require(`~/assets/images/category/${item.image}.svg`)" height="24" width="24">
+							<img :alt="item.name" :src="item.icon" height="24" width="24">
 						</div>
 						<div class="category-list__name">
 							{{ item.name }}
@@ -24,7 +24,6 @@
 		</div>
 	</section>
 </template>
-
 <script>
 import creatSlider   from '~/mixins/creatSlider'
 import SectionHeader from '~/components/SectionHeader'
@@ -44,7 +43,7 @@ export default {
 		return {
 			header : {
 				title : 'Категории',
-				link  : '/mobile-app'
+				link  : '/category'
 			}
 		}
 	},

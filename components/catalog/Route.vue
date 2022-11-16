@@ -1,6 +1,6 @@
 <template>
 	<div class="section">
-		<NuxtLink class="category-route" to="/mobile-app">
+		<NuxtLink class="category-route" to="/category">
 			<div class="category-route__meta">
 				Свой маршрут
 			</div>

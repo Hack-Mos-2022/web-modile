@@ -1,6 +1,6 @@
 <template>
 	<div class="swiper-slide">
-		<NuxtLink class="preview-item" to="/mobile-app">
+		<NuxtLink class="preview-item" to="/category">
 			<div class="preview-item__main">
 				<div class="preview-item__label">
 					{{ slide.label }}

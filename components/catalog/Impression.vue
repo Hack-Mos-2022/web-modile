@@ -6,7 +6,7 @@
 		/>
 
 		<div class="category-impression__list">
-			<NuxtLink class="category-impression__item" to="/category">
+			<NuxtLink class="category-impression__item" to="/category/6237">
 				<div class="category-impression__image">
 					<picture>
 						<source :srcset="require(`~/assets/images/impression/item-1.webp`) + ' 1x, ' + require(`~/assets/images/impression/item-1@2x.webp`) + ' 1.3x'" type="image/webp">

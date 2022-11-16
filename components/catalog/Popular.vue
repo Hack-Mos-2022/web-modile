@@ -4,7 +4,7 @@
 			:title="header.title"
 		/>
 
-		<NuxtLink class="category-popular__box" to="/mobile-app">
+		<NuxtLink class="category-popular__box" to="/category">
 			<div class="category-popular__main">
 				<div class="category-popular__meta">
 					Море впечатлений!

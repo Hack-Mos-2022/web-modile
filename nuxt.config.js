@@ -90,8 +90,9 @@ export default {
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules : [
+		'@nuxtjs/axios',
+		['nuxt-storm', { nested : true }],
 		[
-			'@nuxtjs/axios',
 			'nuxt-modernizr', {
 				'feature-detects' : ['img/webp', 'css/overflow-scrolling'],
 				options           : ['setClasses']
@@ -109,13 +110,5 @@ export default {
 	build : {},
 
 	// Router
-	router : {
-		extendRoutes (routes, resolve) {
-			routes.push({
-				name      : 'mobile-app',
-				path      : '*',
-				component : resolve(__dirname, 'pages/mobileApp.vue')
-			})
-		}
-	}
+	router : {}
 }

@@ -6,7 +6,7 @@
 		/>
 
 		<div class="category-todo__list">
-			<NuxtLink class="category-todo__item category-todo__item--big" to="/mobile-app">
+			<NuxtLink class="category-todo__item category-todo__item--big" to="/category">
 				<div class="category-todo__category">
 					Онлайн
 				</div>
@@ -35,7 +35,7 @@
 				</div>
 			</NuxtLink>
 
-			<NuxtLink class="category-todo__item" to="/mobile-app">
+			<NuxtLink class="category-todo__item" to="/category">
 				<div class="category-todo__category">
 					Онлайн
 				</div>
@@ -61,7 +61,7 @@
 				</div>
 			</NuxtLink>
 
-			<NuxtLink class="category-todo__item category-todo__item--more" to="/mobile-app">
+			<NuxtLink class="category-todo__item category-todo__item--more" to="/category">
 				<div class="category-todo__num">
 					22
 				</div>
@@ -84,7 +84,7 @@ export default {
 		return {
 			header : {
 				title : 'Вам понравится',
-				link  : '/mobile-app'
+				link  : '/category'
 			}
 		}
 	}

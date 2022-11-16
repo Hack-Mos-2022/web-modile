@@ -13,7 +13,7 @@
 						:key="`place-${index}`"
 						class="swiper-slide"
 					>
-						<NuxtLink class="category-place__item" to="/mobile-app">
+						<NuxtLink class="category-place__item" to="/category">
 							<div class="category-place__image">
 								<div class="category-place__rating">
 									<svg fill="none" height="13" width="13" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +60,7 @@ export default {
 		return {
 			header : {
 				title : 'Популярные заведения',
-				link  : '/mobile-app'
+				link  : '/category'
 			}
 		}
 	},

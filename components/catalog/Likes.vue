@@ -12,7 +12,7 @@
 					:key="`likes-${index}`"
 					class="swiper-slide"
 				>
-					<NuxtLink class="category-likes__item" to="/mobile-app">
+					<NuxtLink class="category-likes__item" to="/category">
 						<div v-if="item.image.length > 0" class="category-likes__image">
 							<picture>
 								<source :srcset="require(`~/assets/images/likes/${item.image}.webp`) + ' 1x, ' + require(`~/assets/images/likes/${item.image}@2x.webp`) + ' 1.3x'" type="image/webp">
@@ -56,7 +56,7 @@ export default {
 		return {
 			header : {
 				title : 'Вам понравится',
-				link  : '/mobile-app'
+				link  : '/category'
 			}
 		}
 	},

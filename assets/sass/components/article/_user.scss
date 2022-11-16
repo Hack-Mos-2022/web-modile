@@ -19,19 +19,30 @@
 }
 
 .article-user__cell {
-	font-size       : 13px;
-	font-weight     : 500;
-	line-height     : 135%;
-	box-sizing      : border-box;
-	padding         : 8px;
-	transition      : color .3s ease;
-	text-align      : center;
-	text-decoration : none;
-	letter-spacing  : 0.3px;
-	color           : $color-white-80;
+	font-size                   : 13px;
+	font-weight                 : 500;
+	line-height                 : 135%;
+	box-sizing                  : border-box;
+	padding                     : 8px;
+	cursor                      : pointer;
+	transition                  : color .3s ease;
+	text-align                  : center;
+	text-decoration             : none;
+	letter-spacing              : 0.3px;
+	color                       : $color-white-80;
+	border                      : 0;
+	outline                     : 0;
+	background                  : transparent;
+	-webkit-tap-highlight-color : transparent;
 
 	&:hover {
 		color : $color-white-100;
+	}
+
+	&.active {
+		svg {
+			color : $color-main-green;
+		}
 	}
 }
 

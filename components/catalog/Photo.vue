@@ -5,7 +5,7 @@
 			:title="header.title"
 		/>
 
-		<NuxtLink class="category-photo__item" to="/mobile-app">
+		<NuxtLink class="category-photo__item" to="/category/9767">
 			<div class="category-photo__image">
 				<picture>
 					<source :srcset="require(`~/assets/images/photo/item.webp`) + ' 1x, ' + require(`~/assets/images/photo/item@2x.webp`) + ' 1.3x'" type="image/webp">
@@ -38,7 +38,7 @@ export default {
 		return {
 			header : {
 				title : 'Популярные  места',
-				link  : '/mobile-app'
+				link  : '/category'
 			}
 		}
 	}

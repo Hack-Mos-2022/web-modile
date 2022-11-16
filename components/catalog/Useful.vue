@@ -11,7 +11,7 @@
 					:key="`useful-${index}`"
 					class="swiper-slide"
 				>
-					<NuxtLink class="category-useful__item" to="/mobile-app">
+					<div class="category-useful__item">
 						<picture>
 							<source :srcset="require(`~/assets/images/useful/${item}.webp`) + ' 1x, ' + require(`~/assets/images/useful/${item}@2x.webp`) + ' 1.3x'" type="image/webp">
 							<source :srcset="require(`~/assets/images/useful/${item}.png`) + ' 1x, ' + require(`~/assets/images/useful/${item}@2x.png`) + ' 1.3x'" type="image/png">
@@ -23,7 +23,7 @@
 								width="428"
 							>
 						</picture>
-					</NuxtLink>
+					</div>
 				</div>
 			</div>
 		</div>

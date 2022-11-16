@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import previewData from '~/assets/content/preview.json'
+import previewData from '~/static/data/preview.json'
 
 export default {
 	name : 'IndexPage',

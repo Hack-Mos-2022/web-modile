@@ -13,7 +13,7 @@
 						:key="`likes-${index}`"
 						class="swiper-slide"
 					>
-						<NuxtLink class="category-impression__item" to="/mobile-app">
+						<NuxtLink class="category-impression__item" to="/category/6246">
 							<div class="category-impression__image">
 								<div v-if="item.catalog.length > 0" class="category-impression__catalog">
 									{{ item.catalog }}
@@ -54,7 +54,7 @@ export default {
 		return {
 			header : {
 				title : 'Программы экскурсий',
-				link  : '/mobile-app'
+				link  : '/category'
 			}
 		}
 	}

@@ -38,11 +38,11 @@
 			</div>
 		</div>
 		<div v-if="lat && lng" class="article-place__button">
-			<NuxtLink class="b-btn b-btn--red b-btn--full-size" to="/mobile-app">
+			<NuxtLink class="b-btn b-btn--red b-btn--full-size" to="/map">
 				Маршрут
 			</NuxtLink>
 
-			<NuxtLink class="b-btn b-btn--grey-outline b-btn--full-size" to="/mobile-app">
+			<NuxtLink class="b-btn b-btn--grey-outline b-btn--full-size" to="/map">
 				Арендовать
 			</NuxtLink>
 		</div>

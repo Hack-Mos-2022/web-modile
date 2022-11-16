@@ -1,0 +1,74 @@
+[
+	{
+		"location" : [
+			37.622705,
+			55.834554
+		],
+		"image"    : "https://vdnh.ru/upload/resize_cache/iblock/3cd/688_484_2/3cd9236be48efcc5f8adb4f149767734.jpeg",
+		"title"    : "Экскурсии в центре «Космонавтика и авиация»",
+		"link"     : "/category/6237"
+	},
+	{
+		"location" : [
+			37.626987220951,
+			55.832749492873
+		],
+		"image"    : "https:\\/\\/vdnh.ru\\/upload\\/resize_cache\\/iblock\\/a81\\/688_484_2\\/a818103313638d69748739ce936f43b6.jpg",
+		"title"    : "Экскурсии в Музее славянской письменности «Слово»",
+		"link"     : "/category/6246"
+	},
+	{
+		"location" : [
+			37.638079770508,
+			55.826574113174
+		],
+		"image"    : "https://vdnh.ru/upload/resize_cache/iblock/c7e/688_484_2/c7e9f6fe62d65bc2dde58586e29bf64a.jpg",
+		"title"    : "Обзорные экскурсии по ВДНХ на электрокарах",
+		"link"     : "/category/7198"
+	},
+	{
+		"location" : [
+			37.626987220951,
+			55.832749492873
+		],
+		"image"    : "https://vdnh.ru/upload/resize_cache/iblock/c38/688_484_2/c383e6d92d8d3a9f1f064f217e39e2ce.jpg",
+		"title"    : "Интерактивная экскурсия «Живое слово»",
+		"link"     : "/category/7959"
+	},
+	{
+		"location" : [
+			37.62398743841,
+			55.831345856154
+		],
+		"image"    : "https://vdnh.ru/upload/resize_cache/iblock/e48/688_484_2/e489960d03c980745b4a279526d48d43.jpg",
+		"title"    : "Интерактивное мультимедийное пространство «Лес»",
+		"link"     : "/category/9767"
+	},
+	{
+		"location" : [
+			37.626987220951,
+			55.832749492873
+		],
+		"image"    : "https://vdnh.ru/upload/resize_cache/iblock/c38/688_484_2/c3830c6d4f3f0f33952700f72b664331.jpg",
+		"title"    : "Мастер-классы по каллиграфии",
+		"link"     : "/category/12686"
+	},
+	{
+		"location" : [
+			37.63452936254,
+			55.8333755382
+		],
+		"image"    : "https://vdnh.ru/upload/resize_cache/iblock/27d/688_484_2/27d8f81a745e0731a8a52cf7f308cbbf.jpg",
+		"title"    : "Занятия по постановке свадебного танца",
+		"link"     : "/category/13472"
+	},
+	{
+		"location" : [
+			37.623062979948,
+			55.833820930353
+		],
+		"image"    : "https://vdnh.ru/upload/resize_cache/iblock/19f/688_484_2/19f3fc4bc3549f4b71e988b7037bff6b.jpg",
+		"title"    : "Экскурсии в самолете Як-42",
+		"link"     : "/category/13761"
+	}
+]

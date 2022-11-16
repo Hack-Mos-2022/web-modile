@@ -13,7 +13,7 @@
 					class="swiper-slide"
 				>
 					<div class="swiper-slide">
-						<NuxtLink class="category-week__item" to="/mobile-app">
+						<NuxtLink class="category-week__item" to="/category/13472">
 							<div class="category-week__image">
 								<div class="category-week__meta">
 									{{ item.meta }}
@@ -59,7 +59,7 @@ export default {
 		return {
 			header : {
 				title : 'Вам понравится',
-				link  : '/mobile-app'
+				link  : '/category'
 			}
 		}
 	},

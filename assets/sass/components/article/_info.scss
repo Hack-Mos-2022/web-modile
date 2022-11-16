@@ -27,5 +27,9 @@
 		height        : 41px;
 		padding       : 0;
 		border-radius : 6px;
+
+		&.active {
+			color : $color-main-red;
+		}
 	}
 }

@@ -1,5 +1,5 @@
 <template>
-	<a class="item-list__item" @click.prevent="openItem(post.id)">
+	<a :data-id="post.id" class="item-list__item" @click.prevent="openItem(post.id)">
 		<div class="item-list__image">
 			<img
 				:alt="post.title"

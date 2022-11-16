@@ -10,7 +10,7 @@
 				v-for="(item, index) in events"
 				:key="`events-${index}`"
 				class="category-events__item"
-				to="/mobile-app"
+				to="/category"
 			>
 				<div class="category-events__image">
 					<picture>
@@ -56,7 +56,7 @@ export default {
 		return {
 			header : {
 				title : 'Экскурсии сегодня',
-				link  : '/mobile-app'
+				link  : '/category'
 			}
 		}
 	}
